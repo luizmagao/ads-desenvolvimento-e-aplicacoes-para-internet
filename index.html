@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/sky.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			/* CSS */
+			.make-it-pop {
+			filter: drop-shadow(0 0 10px purple);
+			}
+			.fragment.blur {
+			  filter: blur(5px);
+			}
+			.fragment.blur.visible {
+			  filter: none;
+			}
+		  </style>	
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>DESENVOLVIMENTO E APLICAÇÃO PARA INTERNET</h2>
+				</section>
+				<section>
+					<section>
+						<h2>Antes do começo</h2>
+						<p>Um bom filme.</p>
+						<img src="assets/smile.png" width="64px">
+					</section>
+					<section>
+						<video
+						height="600px"
+						data-autoplay
+						src="assets/1723421979708.mp4"
+						></video>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2 class="r-fit-text">TAGS</h2>
+					</section>
+					<section>
+						<img width="700rem" data-src="assets/elemento-p.png" alt="">
+					</section>
+					<section>
+						<h4>cabeçalhos</h4>
+						<pre><code data-line-numbers>
+		<h6>...</h6>
+		<h5>...</h5>
+		<h4>...</h4>
+		<h3>...</h3>
+		<h2>...</h2>
+		<h1>...</h1>
+	
+						</code></pre>
+					</section>
+					<section>
+						<h4>parágrafos</h4>
+						<pre>
+							<code data-line-numbers>
+		<p>...</p>
+		<p>...</p>
+		<p>...</p>
+
+							</code>
+						</pre>
+					</section>
+					<section>
+						<h4>quebra de linha</h4>
+						<pre>
+							<code data-line-numbers><script type="text/template">
+		<br/>
+		<br/>
+		<br/>
+
+							</script></code>
+						</pre>
+					</section>
+					<section>
+						<h4>fontes</h4>
+						<pre>
+							<code data-line-numbers><script type="text/template">
+		<font size="5">...</font>
+
+							</script></code></pre>
+					</section>
+					<section>
+						<h4>medidas</h4>
+							<img data-src="assets/medidas.png">
+					</section>
+					<section data-background-image="assets/cores.png">
+						<h4>cores</h4>
+						<pre>
+							<code data-line-numbers><script type="text/template">
+		<font size="5" color="red">...</font>
+		<font size="5" color="#ff0000">...</font>
+		<font size="5" color="rgb(255,0,0)">...</font>
+
+							</script></code></pre>
+					</section>
+					<section>
+						<img data-src="assets/hexadecimal.webp" alt="">
+						<img class="fragment custom blur" data-src="assets/lista-hex.webp" alt="">
+					</section>
+					<section>
+						<img data-src="assets/gatinho.gif" alt="">
+						<h2 class="r-fit-text">BORA CODAR! <STRONG>NA MÃO...</STRONG></h2>
+					</section>
+				</section>
+			</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+			Reveal.on('make-it-pop', () => {
+				console.log('✨');
+			});
+		</script>
+	</body>
+</html>
