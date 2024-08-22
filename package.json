@@ -102,6 +102,8 @@
     }
   },
   "dependencies": {
+    "node-static": "^0.7.11",
+    "reveal-multiplex": "^0.1.0",
     "reveal.js": "^5.1.0"
   }
 }

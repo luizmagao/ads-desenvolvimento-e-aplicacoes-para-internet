@@ -135,7 +135,19 @@
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+				multiplex: {
+					// Example values. To generate your own, see the socket.io server instructions.
+					secret: null, // null so the clients do not have control of the master presentation
+					id: '7a8e53ca69dd390a', // id, obtained from socket.io server
+					url: 'https://reveal-multiplex.glitch.me/' // Location of socket.io server
+				},
+
+				// Don't forget to add the dependencies
+				dependencies: [
+					{ src: 'https://reveal-multiplex.glitch.me/socket.io/socket.io.js', async: true },
+					{ src: 'https://reveal-multiplex.glitch.me/client.js', async: true }
+				]
 			});
 			Reveal.on('make-it-pop', () => {
 				console.log('✨');
